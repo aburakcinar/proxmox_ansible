@@ -6,5 +6,4 @@ services:
     ports:
       - "80:80"
     environment:
-      - NGINX_HOST=narayan.local
       - NGINX_POST:80
