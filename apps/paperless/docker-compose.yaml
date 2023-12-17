@@ -33,8 +33,6 @@ services:
     restart: unless-stopped
     volumes:
       - redisdata:/data
-    networks:
-      - postgresql_default
 
   webserver:
     image: ghcr.io/paperless-ngx/paperless-ngx:latest
@@ -58,11 +56,6 @@ services:
       - secrets.env
     environment:
       PAPERLESS_REDIS: redis://broker:6379
-    networks:
-      - postgresql_default
 
 volumes:
   redisdata:
-
-networks:
-  postgresql_default:
