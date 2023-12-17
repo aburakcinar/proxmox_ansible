@@ -63,3 +63,6 @@ services:
 
 volumes:
   redisdata:
+
+networks:
+  - postgresql_default
