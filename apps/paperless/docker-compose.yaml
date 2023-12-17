@@ -65,4 +65,4 @@ volumes:
   redisdata:
 
 networks:
-  - postgresql_default
+  postgresql_default:
